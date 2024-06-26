@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh !important;
+}
+.boxLogin{
+    background-color: #55555517;
+    padding: 40px 60px;
+    position: relative;
+}
+
+@media screen and (max-width: 827px){
+    .boxLogin{ padding: 20px; }
+}
+
+@media screen and (max-width: 500px){
+    .boxLogin{ padding: 20px 10px; }
+}
+
+.boxLoginContent{
+    background-color: #fff;
+    border-top: 4px solid #f78b1f;
+}
+
+.headerLogin svg{
+    fill: #005594;
+    transition:  fill ease-in-out 400ms;
+}
+
+.headerLogin{
+    background-color: #55555508;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    border-bottom: 1px solid #55555516;
+}
+
+.headerLogin a{
+    display: block;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color ease-in-out 300ms, fill ease-in-out 300ms;
+}
+
+.headerLogin a:hover{
+    background-color: #005494;
+}
+
+.headerLogin a:hover svg{
+   fill: #fff;
+   transition:  fill ease-in-out 400ms;
+}
+
+.headerLogin svg{
+    height: 25px;
+}
+
+.boxFormLogin img{
+    width: 200px;
+}
+
+.boxFormLogin span, .modalBtnToggle{
+    color: #f78b1f;
+    font-size: 12.5px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+    padding: 8px 0 0 0;
+    background-color: transparent;
+    transition: opacity 300ms ease-in-out;
+    border: none;
+}
+
+.boxFormLogin a{
+    color: #f78b1f;
+    text-decoration: underline;
+    background-color: transparent ;
+    transition: opacity 300ms ease-in-out;
+}
+
+.boxFormLogin a:hover, .modalLoginBtn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.boxFormLogin{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxForm__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 827px){
+    .boxFormLogin{
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.boxFormLogin #btnlogin{
+    background-color: #005494;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 4px 8px 8px;
+    height: 100%;
+    transition: background-color 300ms ease-in-out;
+}
+
+.boxFormLogin #btnlogin:hover{
+    background-color: #00477d;
+    cursor: pointer;
+}
+
+.boxFormLogin svg{
+    width: 10px;
+    height: 16px;
+}
+
+.boxFormLogin form{
+    display: flex;
+    gap: 4px;
+}
+
+.boxForm__row{
+    display: flex;
+    align-items: center;
+    background-color: #55555516;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 445px ) {
+    .boxFormLogin{
+        padding: 20px;
+    }
+    .boxFormLogin form{
+        flex-direction: column;
+        width: 100%;
+    }
+    .boxFormLogin form input,
+    .boxForm__row,
+    .boxFormWrapper {
+        width: 100%;
+    }
+
+    .svgLock{
+        margin-right: 2px;
+    }
+}
+
+.boxFormLogin .svgUser{
+    height: 21px;
+}
+.boxFormLogin svg{
+    fill: #555555a2;
+    padding-right: 4px;
+    width: 26px;
+}
+
+.boxFormLogin input{
+    border: 1px solid #5555551d;
+    border-radius: 0;
+    padding: 8px 4px;
+    outline: none;
+    transition: border 200ms ease-in-out;
+    height: 36px;
+}
+
+.boxFormLogin input:focus{
+    border: 1px solid #55555545;
+}
+
+.boxFormLogin input::placeholder{
+    color: #55555582;
+}
+
+.boxImgLogin img{
+    width: 100%;
+}
+.imgMobile{ display: none; }
+
+.headerBoxImg{
+    background-color: #005494;
+    color: #fff;
+}
+
+.headerBoxImg span{
+    background-color: #f78b1f;
+    padding: 18px 20px;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.boxFooterLogin{
+    background-color: #00477d;
+    border-top: 3px solid #f78b1f;
+    color: #f78b1f;
+    font-size: 13px;
+    gap: 12px;
+    padding: 45px 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 827px){
+    .boxFooterLogin{
+        padding: 40px 20px;
+    }
+
+    .imgDesktop{ display: none; }
+    .imgMobile{ display: block; }
+}
+
+.boxFormCadastro form{
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+.boxFormCadastro button{
+    background-color: #005594;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.boxFormCadastro button:hover{
+    background-color: #00487e;
+    cursor: pointer;
+}
+
+.boxFormCadastro form > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .boxFormCadastro form > div{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .boxFormCadastro form{
+        margin: 0 10px;
+        padding: 20px 10px;
+    }
+}
+
+.boxFormCadastro form input, .boxFormCadastro select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: border 200ms ease-in-out;
+}
+
+.boxFormCadastro form input:focus{
+    border: 1px solid #808080;
+}
+
+.boxFormCadastro input::placeholder{
+    color: #5555556c;
+}
+
+.boxFormCadastro form label{
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.boxFormCadastro p{
+    color: #555555;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+.boxFormCadastro h1{
+    font-size: 21px;
+    font-weight: 400;
+    border-bottom: 1px solid #55555537;
+    margin: 40px 30px;
+    padding: 8px 0;
+}
+
+
+@media screen and (max-width: 767px){
+    .boxFormCadastro h1{
+        margin: 30px 14px;
+    }
+    .boxFormCadastro p{
+        padding: 0 14px;
+    }
+}
+.boxFormCadastro .boxForm__row{
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.boxModal__login{
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+    /* border: 1px solid #eaecee; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.boxModal__login .boxForm{
+    width: 100%;
+    padding: 10px 10px 0 10px;
+}
+
+.boxModal__login .boxForm__row{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: baseline;
+    background-color: #fff !important;
+}
+
+.boxModal__login .boxForm__row label{
+    color: #5f5f5f;
+    font-size: 14px;
+    display: block;
+}
+
+.boxModal__login .boxForm input[type="text"],
+.boxModal__login .boxForm input[type="password"]
+{
+    border: transparent;
+    border-bottom: 1px solid #F78B1F;
+    outline: none;
+    width: 100%;
+    color: #858585;
+    padding: 8px 0 4px 0;
+    transition: border 300ms ease-in-out;
+    margin-bottom: 20px;
+}
+
+.boxModal__login .boxForm input[type="text"]:focus,
+.boxModal__login .boxForm input[type="password"]:focus{
+    border-bottom: 1px solid #00468B;
+}
+
+.boxModal__login h3{
+    color: #00468B;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #00458b36;
+    padding: 0 50px 20px 20px;
+}
+
+.boxForm__footer{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 410px) {
+    .boxModal__login{
+        width: calc(100vw - 40px) !important;
+    }
+}
+
+.boxFormExcluir p{
+   margin: 0;
+   padding: 20px;
+   color: #4d4141;
+}
