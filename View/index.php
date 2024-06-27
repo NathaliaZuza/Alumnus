@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" type="image/png" href='../View/img/favicon.png'?>
+    <link rel="shortcut icon" type="image/png" href='../view/img/favicon.png'?>
 </head>
 <body>
     <?php include('./header.php')  ?>

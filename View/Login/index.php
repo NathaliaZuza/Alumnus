@@ -61,7 +61,7 @@
 
                     <div class="boxForm__links">
                         <button class="modalLoginBtn modalBtnToggle">Gerenciar cadastro</button>
-                        <span>Primeiro acesso? <a href="../../View/Cadastro?page=cadastrar">Cadastrar</a></span>
+                        <span>Primeiro acesso? <a href="../../view/cadastro?page=cadastrar">Cadastrar</a></span>
                     </div>
                 </div>
             </div>

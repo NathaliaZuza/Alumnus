@@ -1,0 +1,243 @@
+.boxPainel{
+    padding-bottom: 40px;
+}
+
+.boxAbas{
+    padding: 20px 0;
+    display: flex;
+    margin-top: 10px;
+    gap: 6px;
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.boxAbas a{
+    background-color: transparent;
+    border: 1px solid #00458b4d;
+    color: #7d7d7d;
+    padding: 5px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.boxAbas a.active, .boxAbas a:hover{
+    /* background-color: #00458b;
+    border: 1px solid #00458b; */
+    background-color: #F78B1F;
+    border: 1px solid #F78B1F;
+    color: #fff;
+}
+
+.boxAbas a:hover{
+    cursor: pointer;
+}
+
+/* .boxContent{
+    display: none;
+} */
+.boxContent.active{
+    display: block;
+}
+
+.boxCardsAdm{
+    padding-bottom: 40px;
+}
+
+.boxCardsAdm .boxCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #eaecee;
+    border-top: 2px solid #00458b;
+}
+
+.boxCardsAdm .boxCard h3{
+    margin-top: 0;
+    padding-right: 30px;
+}
+
+
+.boxCard a{
+    background-color: #00458b;
+}
+
+.boxDisciplina{
+    margin-top: 30px;
+}
+
+.boxDisciplina .boxCTA{
+    font-weight: 500
+}
+
+.boxDisciplina__accordionHeader, .boxCTA__edit{
+    display: flex;
+    justify-content: space-between;
+    transition: border 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.boxDisciplina__accordionHeader > div, .boxCTA__edit > div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.boxCTA__edit > div {
+    width: 100%;
+}
+.boxDisciplina__accordionHeader:hover {
+    cursor: pointer;
+    /* background-color: #00458b12; */
+    color: #7d7d7d;
+}
+
+.boxCTA.boxDisciplina__accordionHeader:hover, .boxCTA__edit{
+    border-top: 2px solid #F78B1F;
+}
+
+.boxCTA__edit{
+    background-color: #a4a4a40a;
+}
+
+.boxCTA__edit input{
+    background-color: #fff;
+    border: 1px solid #e2e4e6;
+    outline: none;
+    padding: 6px 10px;
+    width: 100%;
+    transition: border 200ms ease-in-out;
+    color: #606060;
+}
+
+.boxCTA.boxDisciplina__accordionHeader:hover svg, .boxCTA__edit svg{
+    fill: #F78B1F;
+}
+
+.boxCTA.boxDisciplina__accordionHeader:hover svg.boxDisciplina__seta{
+    fill: none;
+    stroke: #F78B1F;
+}
+
+.boxCTA__edit svg.fillTransparent{
+    fill: none;
+}
+
+.boxCTA.boxDisciplina__accordionHeader svg{
+    fill: #00458b;
+    transition: fill 300ms ease-in-out, stroke 300ms ease-in-out ;
+}
+
+.boxCTA svg.boxDisciplina__seta{
+    fill: none;
+    stroke: #00458b;
+}
+
+.boxDisciplina__accordionHeader svg {
+   width: 16px;
+}
+
+.boxDisciplina__accordionContent {
+    display: none;
+    /* background-color: #00458b05; */
+    /* border-bottom: 1px solid #ccc; */
+    border-radius: 6px;
+    padding-right: 15px;
+}
+
+.boxDisciplina__accordionContent.boxDisciplinaEdit{
+    display: block !important;
+    background-color: #7d7d7d07;
+}
+
+.boxDisciplina__accordionContent em{
+    font-size: 15px;
+    color: #7d7d7d;
+    font-style: normal;
+    font-weight: 500;
+    border-bottom: 1px solid #7d7d7d6f;
+    margin: 10px 15px;
+    display: inline-block;
+}
+
+.boxDisciplina__accordionContent.boxDisciplinaEdit em{
+    border: none;
+    color: #656565;
+    font-weight: 400;
+}
+
+.boxDisciplina__accordionContent ol{
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.boxDisciplina__accordionContent ol li{
+    background-color: #cccccc35;
+    padding: 6px 15px;
+    border-radius: 40px;
+    list-style-type: decimal;
+    font-size: 14px;
+}
+
+.boxDisciplinaEdit ol li input{
+    border: 1px solid #e2e4e6;
+    outline: none;
+    padding: 6px 15px;
+    border-radius: 40px;
+    width: 100%;
+    transition: border 200ms ease-in-out;
+    color: #606060;
+}
+.boxDisciplinaEdit ol li input:focus, .boxDisciplinaEdit ol li input:hover, .boxCTA__edit input:focus, .boxCTA__edit input:hover{
+    border: 1px solid #c0c0c0;
+}
+.boxDisciplinaEdit ol li{
+    padding: 0px;
+}
+
+.boxDisciplina__accordionContent ol li:nth-child(odd){
+    background-color: #cccccc16;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 6; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modalContent {
+    position: relative;
+    background-color: #fefefe;
+    margin: 100px auto 0 auto;
+    padding: 20px 0px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.modalContent h3{
+    color: #00468B;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid #00458b36;
+    padding: 0 50px 20px 20px;
+}
+
+.modalContent p {
+    color: #4d4141;
+    padding: 20px 20px 0 20px;
+}
+
+.boxPainel .boxVoltar{
+    margin-left: 0;
+    padding: 20px 0 10px 0;
+}

@@ -1,0 +1,131 @@
+h1 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-weight: 300;
+    margin: 0 0 16px 0;
+    text-shadow: 4px 4px 4px #00000040;
+}
+
+@media screen and (max-width: 1440px){
+    h1 { font-size: 54px; }
+}
+@media screen and (max-width: 767px){
+    h1 { 
+        font-size: 48px;
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+form label {
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 170px; 
+    text-transform: uppercase;
+    margin: 5px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+form input[name="roleAdmin"] {
+    background-color: #ff9800; 
+}
+
+form input[name="roleAdmin"]:hover {
+    background-color: #e68900; 
+}
+
+form input[name="roleUsuario"] {
+    background-color: #00468B; 
+}
+
+form input[name="roleUsuario"]:hover {
+    background-color: #003b76; 
+}
+
+.boxDefinir{
+    width: 100%;
+    font-family: Roboto;
+    height: 75vh;
+    max-height: 600px;
+    min-height: 450px;
+    background-image: url("../img/bkgDefinir.png");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: center;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.boxDefinir p{
+    margin: 0;
+}
+
+@media screen and (max-width: 1280px){
+    .boxDefinir{
+        height: 450px;
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .boxDefinir{
+        background-image: url("../img/bkgDefinirMobile.png");
+        height: 100vh;
+        min-height: auto;
+        max-height: calc(100vh - 145px);
+        margin: 0;
+    }
+    .boxDefinir span{
+        max-width: calc(100vw - 90px);
+        text-align: center;
+    }
+
+    form input[type="submit"] {
+        padding: 12px 20px;
+        font-size: 13px;
+        width: 140px; 
+    }
+}
+
+@media screen and (max-width: 364px){
+    form input[type="submit"] {
+        width: 120px; 
+    }
+}
+
+.boxDefinirWrapper{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+header.boxHeader__typeB{
+    position: static !important;
+}
+
+nav.boxNav__typeB{
+    position: static !important;
+}
