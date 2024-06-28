@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box !important;
+    font-family: Roboto, sans-serif;
+}
+
+.boxPerfil{
+    background-color: #f7f7f7c4;
+}
+
+.boxPerfil__header img{
+    width: 100%;
+}
+
+.boxPerfil__header{
+    position: relative;
+}
+
+.boxPerfil__header_editar{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 200ms ease-in-out;
+}
+
+.boxPerfil__header_editar:hover{
+    background-color: #ffffffa0;
+}
+
+.boxPerfil__header_editar svg{
+    height: 20px;
+}
+
+.boxPerfilWrapper{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.boxCardPerfil{
+    background-color: #fff;
+    border: 1px solid #bcbcbc88;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    max-width: 300px;
+    border-top: 4px solid #ff9800;
+}
+
+.boxCardPerfil h2{
+    color: #00468B;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0 6px 0 ;
+}
+
+.boxImg__wrapper{
+    position: relative;
+}
+
+.boxImg__svg{
+    background-color: #e37c16;
+    border: none;
+    fill: #fff;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    transition: background-color 200ms ease-in-out;
+}
+
+.boxImg__svg:hover{
+   cursor: pointer;
+   background-color: #ff952c;
+}
+
+.boxImg__svg svg{
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.listCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: -7px;
+    margin-left: 340px;
+    padding: 20px 30px 20px 10px;
+    gap: 10px;
+}
+
+.listCards .cardInfo{
+    padding: 7px;
+    border: 1px solid #bcbcbc88;
+    padding: 0px;
+    border-radius: 8px;
+    background-color: #fff;
+    min-height: 120px;
+    overflow: hidden;
+}
+
+.cardInfo__img{
+    border-bottom: 4px solid #F78B1F;
+    overflow: hidden;
+    position: relative;
+    height: 140px;
+}
+
+.cardInfo__img img{
+    width: 100%;
+    position: absolute;
+    top: -35px;
+}
+
+.cardInfo__content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.cardInfo__content strong{
+    color: #00468B;
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+
+.cardInfo__content a{
+    color: #fff;
+    background-color: #F78B1F;
+    border-radius: 40px;
+    padding: 10px 26px;
+    font-size: 13px;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 14px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.cardInfo__content a:hover{
+    opacity: 0.7;
+}
+
+.cardInfo__content time{
+    color: #858585;
+    font-size: 14px;
+}
+
+.boxCardPerfil em{
+    color: #858585;
+    font-size: 15px;
+    text-align: center;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.boxLocal{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #858585;
+}
+
+.boxCardPerfil__github {
+    position: relative;
+    width: 30px;
+}
+
+.boxCardPerfil__github svg {
+    scale: 0.24;
+    position:absolute;
+    top: -33.5px;
+    left: -33px;
+    z-index: 2;
+}
+
+.boxCardPerfil__icons{
+    display: flex;
+    margin-top: 10px;
+    fill: #00468B;
+}
+
+.boxCardPerfil__icons svg{
+    fill: #00468B;
+    transition: opacity 300ms ease-in-out;
+}
+
+.boxCardPerfil__icons svg:hover{
+    opacity: 0.7;
+}
+
+.boxCardPerfil__icons a{
+    height: 30px;
+    max-height: 30px;
+    display: block;
+}
+
+.boxCardPerfil strong{
+    text-align: left;
+    color: #aeaeae;
+    align-self: baseline;
+    display: block;
+    margin-top: 24px;
+    text-transform: uppercase;
+}
+
+.boxCardPerfil p{
+    text-align: left;
+    color: #5f5f5f;
+    align-self: baseline;
+    display: block;
+    margin: 6px 0 0 0;
+}
+
+.boxNotFound{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 300px;
+}
+
+@media screen and (max-width: 840px){
+    .boxCardPerfil{
+        position: static;
+        width: 100%;
+        max-width: none;
+        border-top: 0;
+        padding: 30px 50px;
+    }
+    .boxPerfilWrapper{
+        padding-bottom: 0px;
+    }
+    .boxNotFound{
+        padding-left: 0;
+    }
+}
+
+.boxNotFound__img img{
+    width: 150px;
+}
+
+.boxNotFound__img{
+    padding: 40px 40px 60px 40px;
+    color: #00468B;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boxNotFound__img h3{
+    margin: 0;
+}
+
+.adicionarBtn:hover{
+    background-color: #fff;
+    color: #ff9800;
+    border: 1px solid #F78B1F;
+}
+
+.adicionarBtn{
+    border-radius: 40px;
+    transition: background-color ease-in-out 200ms, color ease-in-out 200ms;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background-color: #ff9800;
+    color: #fff;
+    border: 1px solid #F78B1F;
+}
+
+.boxHeaderCards{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 20px 0;
+    margin-left: 350px;
+}
+
+.adicionarBtn__typeB{
+    background-color: transparent;
+    color: #00468B;
+    text-decoration: underline;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: color ease-in-out 200ms;
+}
+
+.adicionarBtn__typeB:hover{
+    color: #F78B1F;
+    cursor: pointer;
+}
+
+.boxForm{
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+    /* border: 1px solid #eaecee; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.boxForm__row{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.boxForm__row__img{
+    width: 100%;
+}
+
+.boxForm__row label{
+    color: #5f5f5f;
+    font-size: 14px;
+    display: block;
+    /* padding: 4px 0 10px 0; */
+}
+
+.boxForm__rowImgWrapper{
+    position: relative;
+}
+
+.boxForm__rowImgWrapper .boxEditar__file{
+    position: absolute;
+    bottom: 5px;
+    left: -2px;
+    scale: 0.9;
+}
+
+.boxForm__rowImgWrapper .boxEditar__file .boxEditar__labelFile {
+    display: flex;
+    align-items: center;
+    color: #000 !important;
+    background-color: #fff;
+}
+
+.boxForm__rowImgWrapper .boxEditar__file .boxEditar__labelFile svg{
+    stroke: #000;
+}
+
+.boxEditar__labelFile svg{
+    stroke: #fff;
+}
+
+.boxForm input[type="text"],
+.boxForm input[type="date"]{
+    border: transparent;
+    border-bottom: 1px solid #F78B1F;
+    outline: none;
+    color: #858585;
+    padding: 8px 0 4px 0;
+    transition: border 300ms ease-in-out;
+}
+
+.boxForm input[type="file"]{
+    border: none;
+    background-color: transparent;
+    appearance: none;
+}
+
+.boxForm input[type="text"]:focus,
+.boxForm input[type="date"]:focus{
+    border-bottom: 1px solid #00468B;
+}
+
+.boxForm button{
+    border-radius: 40px;
+    background-color: #F78B1F;
+    border: 1px solid #F78B1F;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px ;
+    max-width: 200px;
+    margin: 20px auto 0 auto;
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.boxForm button:hover{
+    background-color: #fff;
+    color: #F78B1F;
+    cursor: pointer;
+}
+
+.boxContentDisciplinas{
+    margin-left: 330px;
+    padding: 10px 30px 20px 20px;
+}
+
+.boxSemestres{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0 0 0 ;
+    outline: none;
+}
+
+.boxSemestres select, .boxSemestres button{
+    border: none;
+    background-color: #00468B;
+    color: #fff;
+    padding: 7px 14px;
+}
+
+.boxSemestres select{
+    border-radius: 50px;
+}
+
+.boxSemestres button{
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media screen and (max-width: 840px){
+    .listCards, .boxContentDisciplinas, .boxHeaderCards {
+        margin: 0;
+    }
+    .boxContentDisciplinas {
+        margin-top: 20px;
+        padding: 0 27px;
+    }
+    .boxPerfilWrapper{
+        padding-bottom: 40px;
+    }
+    .boxHeaderCards{
+        margin-left: 20px;
+    }
+}
+
+.boxHeader__disciplina{
+    color: #00468B;
+    font-weight: 500;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.boxHeader__disciplina img{
+   position: absolute;
+   bottom: -14px;
+   left: 0px;
+   width: 100%;
+}
+.boxEditarPerfil{
+    background-color: #fff;
+    border: 1px solid #bcbcbc88;
+    border-radius: 6px;
+}
+
+.boxEditarPerfil h2{
+    font-weight: 500;
+    font-size: 20px;
+    color: #7a7a7a;
+    margin: 0;
+    padding: 20px 0 0 20px;
+}
+
+.boxEditarPerfil__wrapper{
+    margin: 0 auto;
+}
+
+.boxEditar{
+    display: flex;
+    padding: 0 0 30px 20px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .boxEditar{
+        flex-direction: column;
+    }
+}
+
+.boxEditarForm{
+    border-left: 1px solid #dbdbdb;
+    padding-top: 0;
+}
+
+.boxImgEditar{
+    padding-top: 20px;
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.boxEditarForm input::placeholder{
+    color: #55555582;
+}
+
+.boxForm__github {
+    position: relative;
+}
+
+.boxForm__github svg{
+    position: absolute;
+    scale: 0.17;
+    top: -18px;
+    left: -38px;
+}
+
+.boxEditarForm .boxForm__rowGithub input{
+    padding: 6px 0 4px 26px;
+}
+
+.boxForm__row textarea{
+    border: 1px solid #F78B1F;
+    border-radius: 4px;
+    margin-top: 4px;
+    outline: none;
+    padding: 8px;
+}
+
+.boxForm__row textarea:focus{
+    border: 1px solid #00468B;
+}
