@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+.boxNotificacao h1{
+    text-align: left !important;
+    margin-bottom: 70px;
+}
+
+.boxNotificacao{
+    padding-bottom: 50px;
+}
+
+.boxNotificacao .mainTitle img{
+    left: -12px;
+    transform: translateX(0);
+    width: 180px;
+    bottom: -15px;
+}
+
+.boxNotificacao p{
+    color: #434343;
+    margin: 40px 0 30px 0;
+}
+
+.boxNotificacao__line svg{
+    width: 25px;
+    min-width: 25px;
+}
+
+.boxNotificacao__line {
+    border: 1px solid #00458b1e;
+    background-color: #00458b14;
+    color: #00468B;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 12px;
+    fill: #00468B;
+    border-radius: 4px;
+    transition: opacity 300ms ease-in-out;
+    margin-bottom: 10px;
+}
+
+.boxNotificacao__line:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.boxNotificacao__line svg {
+    margin-right: 10px;
+}
+
+.checked{
+    background-color: transparent;
+    color: #096d00;
+    fill: #00950c;
+}
+
+.checked:hover{
+    background-color: transparent;
+    opacity: 1 !important;
+    cursor: default;
+}
+
+.boxFormCadastro form{
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.boxFormCadastro button{
+    background-color: #005594;
+    color: #fff;
+    border-radius: 0;
+    border: 1px solid #005594;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.boxFormCadastro button:hover{
+    background-color: #00487e;
+    cursor: pointer;
+}
+
+.boxFormCadastro form > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 767px){
+    .boxFormCadastro form > div{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .boxFormCadastro form{
+        margin: 0;
+        padding: 20px 10px;
+    }
+}
+
+.boxFormCadastro form input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: border 200ms ease-in-out;
+}
+
+.boxFormCadastro form input:focus{
+    border: 1px solid #808080;
+}
+
+.boxFormCadastro input::placeholder{
+    color: #5555556c;
+}
+
+.boxFormCadastro form label{
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.boxFormCadastro .boxForm__row{
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.boxForm__row.check{
+    display: flex;
+    flex-direction: row !important;
+    align-items:  center;
+}
+
+.boxForm__row.check input{
+   width: auto;
+   margin: 0 0 0 10px;
+}
+
+.boxForm__row.check label{
+    margin: 0;
+ }
+button.boxForm__btnNegar, button.boxForm__btnNegar:hover{
+    background-color: #fff;
+    border: 1px solid #00468B;
+    color: #00468B;
+    transition: opacity 200ms ease-in-out ;
+}
+
+button.boxForm__btnNegar:hover{
+    opacity: 0.45;
+}
